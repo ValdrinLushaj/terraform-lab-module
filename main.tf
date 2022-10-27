@@ -20,7 +20,7 @@ module "user-valdrin-module" {
           "iam:ChangePassword"
         ]
         Effect   = "Allow"
-        Resource = aws_iam_user.lb.arn
+        Resource = "*"
       }
     ]
   }
