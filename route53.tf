@@ -13,7 +13,7 @@ data "aws_lb" "this" {
 
 resource "aws_route53_record" "www" {
   zone_id = data.aws_route53_zone.selected.zone_id
-  name    = "web.valdrin.appstellar.training"
+  name    = local.subdomain
   type    = "A"
   ttl     = 300
   records = [data.aws_lb.this.dns_name]
