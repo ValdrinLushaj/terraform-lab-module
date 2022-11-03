@@ -12,6 +12,6 @@ module "acm" {
   wait_for_validation = true
 
   tags = {
-    Name = "my-domain.com"
+    Name = local.subdomain
   }
 }
