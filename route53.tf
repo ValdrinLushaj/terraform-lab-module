@@ -16,5 +16,5 @@ resource "aws_route53_record" "www" {
   name    = "web.valdrin.appstellar.training"
   type    = "A"
   ttl     = 300
-  records = ["8.8.8.8"]
+  records = [data.aws_lb.this.dns_name]
 }
