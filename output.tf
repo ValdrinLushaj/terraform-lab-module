@@ -1,3 +1,3 @@
 output "password" {
-  value = module.user-valdrin-module.password
+  value = module.valdrin-module.password
 }
