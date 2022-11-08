@@ -1,6 +1,6 @@
-module "user-valdrin-module" {
-  source  = "app.terraform.io/devops-training-valdrin/user-valdrin-module/iam"
-  version = "1.0.1"
+module "valdrin-module" {
+  source  = "app.terraform.io/devops-training-valdrin/valdrin-module/assignment"
+  version = "1.0.0"
   # insert required variables here
 
   user_name   = "valdrin-user"
